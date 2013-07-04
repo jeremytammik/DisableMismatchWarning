@@ -11,7 +11,7 @@ This can be supressed by adding a new property group to the project file.
 
 This C# .NET command line console application achieves this recursively for all C# and VB Visual Studio project files in and under the current working directory.
 
-For more detailes, please refer to The Building Coder Revit API blog:
+For more details, please refer to The Building Coder Revit API blog:
 
 http://thebuildingcoder.typepad.com
 
