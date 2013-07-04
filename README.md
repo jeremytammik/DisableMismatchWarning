@@ -16,3 +16,5 @@ For more detailes, please refer to The Building Coder Revit API blog:
 http://thebuildingcoder.typepad.com
 
 http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html
+
+http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html
