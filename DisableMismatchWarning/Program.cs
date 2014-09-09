@@ -52,10 +52,22 @@ namespace DisableMismatchWarning
 
       bool isProjectFile
         = lines[0].StartsWith( "<?xml version=" )
-        && lines[1].StartsWith( "<Project " )
-        && lines[2].Equals( "  <PropertyGroup>" );
+        && lines[1].StartsWith( "<Project " );
+
+      if( !isProjectFile )
+      {
+        Console.WriteLine( filename + " -- not a Visual Studio project." );
+        return rc;
+      }
 
       int n = 2;
+
+      while( lines[n].StartsWith( "  <Import " ) )
+      {
+        ++n;
+      }
+
+      isProjectFile = lines[n].Equals( "  <PropertyGroup>" );
 
       if( !isProjectFile )
       {
@@ -64,12 +76,6 @@ namespace DisableMismatchWarning
           && lines[1].Equals( "  <PropertyGroup>" );
 
         n = 1;
-      }
-
-      if( !isProjectFile )
-      {
-        Console.WriteLine( filename + " -- not a Visual Studio project." );
-        return rc;
       }
 
       bool hasArchMismatchTag = 0 < lines.Where(
