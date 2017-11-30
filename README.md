@@ -1,5 +1,9 @@
-DisableMismatchWarning
-======================
+# DisableMismatchWarning
+
+![Revit API](https://img.shields.io/badge/Revit%20API-2018-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgray.svg)
+![.NET](https://img.shields.io/badge/.NET-4.5.2-blue.svg)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
 Disable Processor Architecture Mismatch Warning MSB3270 in Revit Projects
 
@@ -11,10 +15,24 @@ This can be supressed by adding a new property group to the project file.
 
 This C# .NET command line console application achieves this recursively for all C# and VB Visual Studio project files in and under the current working directory.
 
-For more details, please refer to The Building Coder Revit API blog:
+For more details, please refer to [The Building Coder Revit API blog](http://thebuildingcoder.typepad.com) articles:
 
-http://thebuildingcoder.typepad.com
+- [Processor Architecture Mismatch Warning](http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html)
+- [Recursively Disable Architecture Mismatch Warning](http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html)
+- [DisableMismatchWarning Update](http://thebuildingcoder.typepad.com/blog/2014/09/architecture-mismatch-warning-disabler-update.html#3)
 
-http://thebuildingcoder.typepad.com/blog/2013/06/processor-architecture-mismatch-warning.html
 
-http://thebuildingcoder.typepad.com/blog/2013/07/recursively-disable-architecture-mismatch-warning.html
+## Author
+
+Jeremy Tammik,
+[The Building Coder](http://thebuildingcoder.typepad.com),
+[ADN](http://www.autodesk.com/adn)
+[Open](http://www.autodesk.com/adnopen),
+[Autodesk Inc.](http://www.autodesk.com)
+
+
+## License
+
+This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Please see the [LICENSE](LICENSE) file for full details.
+
